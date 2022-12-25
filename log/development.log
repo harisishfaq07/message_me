@@ -1432,3 +1432,327 @@ Processing by ChatroomController#index as */*
 Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms | Allocations: 10773)
 
 
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:06:05 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 106)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.4ms | Allocations: 93)
+  Rendered layouts/_navbar.html.erb (Duration: 11.6ms | Allocations: 2098)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 9928)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.6ms | Allocations: 10852)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:06:06 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8510)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.1ms | Allocations: 8793)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:07:12 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 106)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 1.3ms | Allocations: 93)
+  Rendered layouts/_navbar.html.erb (Duration: 14.0ms | Allocations: 2098)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 9786)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.4ms | Allocations: 10689)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:07:13 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 8498)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.1ms | Allocations: 8781)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:07:14 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 8498)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.1ms | Allocations: 8762)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:07:15 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 1487)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 8507)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.1ms | Allocations: 8772)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:07:22 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.3ms | Allocations: 93)
+  Rendered layouts/_navbar.html.erb (Duration: 4.1ms | Allocations: 2101)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 9812)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.1ms | Allocations: 10715)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:08:18 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.6ms | Allocations: 93)
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 2098)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 9853)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.1ms | Allocations: 10775)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:11:15 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 8626)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms | Allocations: 9561)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `logo_link_tag' for #<ActionView::Base:0x0000000000df70>
+
+    '.freeze;@output_buffer.append=( logo_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^):
+    2: <html>
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <%= logo_link_tag %>
+    6:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+  
+app/views/layouts/application.html.erb:5
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:11:54 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 5057)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 5962)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `logo_link_tag' for #<ActionView::Base:0x0000000000e2e0>
+
+    '.freeze;@output_buffer.append=( logo_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= logo_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:13:49 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 5065)
+Completed 500 Internal Server Error in 37ms (Allocations: 5957)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_link_tag' for #<ActionView::Base:0x0000000000e650>
+
+    '.freeze;@output_buffer.append=( log_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= log_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:13:50 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 4682)
+Completed 500 Internal Server Error in 25ms (Allocations: 4939)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_link_tag' for #<ActionView::Base:0x0000000000e920>
+
+    '.freeze;@output_buffer.append=( log_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= log_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:13:51 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 4681)
+Completed 500 Internal Server Error in 26ms (Allocations: 4920)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_link_tag' for #<ActionView::Base:0x0000000000ebf0>
+
+    '.freeze;@output_buffer.append=( log_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= log_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:13:51 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4681)
+Completed 500 Internal Server Error in 20ms (Allocations: 4920)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_link_tag' for #<ActionView::Base:0x0000000000eec0>
+
+    '.freeze;@output_buffer.append=( log_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= log_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:13:52 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 4682)
+Completed 500 Internal Server Error in 19ms (Allocations: 4921)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_link_tag' for #<ActionView::Base:0x0000000000f190>
+
+    '.freeze;@output_buffer.append=( log_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= log_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:13:52 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4681)
+Completed 500 Internal Server Error in 19ms (Allocations: 4920)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_link_tag' for #<ActionView::Base:0x0000000000f460>
+
+    '.freeze;@output_buffer.append=( log_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= log_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:13:52 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 4679)
+Completed 500 Internal Server Error in 16ms (Allocations: 4918)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `log_link_tag' for #<ActionView::Base:0x0000000000f730>
+
+    '.freeze;@output_buffer.append=( log_link_tag );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^):
+    3:   <head>
+    4:     <title>MessageMe</title>
+    5:     <meta name="viewport" content="width=device-width,initial-scale=1">
+    6:     <%= log_link_tag %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= csp_meta_tag %>
+    9:     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+app/views/layouts/application.html.erb:6
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:14:48 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.5ms | Allocations: 93)
+  Rendered layouts/_navbar.html.erb (Duration: 6.3ms | Allocations: 2115)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 10460)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 1.0ms | Allocations: 11355)
+
+
