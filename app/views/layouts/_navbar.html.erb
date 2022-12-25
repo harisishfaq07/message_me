@@ -1,0 +1,27 @@
+<div class="ui tiny inverted menu">
+  <a class="item">
+  <%= image_tag 'logo.png' %>
+  </a>
+  <% if user_signed_in? %>
+  <a class="item">
+    Chatroom
+  </a>
+  <a class="item">
+  Users
+</a>
+  <% end %>
+  <div class="right menu">
+    <div class="ui dropdown item">
+      Language <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item">English</a>
+        <a class="item">Russian</a>
+        <a class="item">Spanish</a>
+      </div>
+    </div>
+    <div class="item">
+       <% if !user_signed_in? %> <%= button_to "Login" , new_user_session_path , class: "ui primary button" %>  <%= button_to "Register Yourself" , new_user_registration_path , class: "ui primary button" %><% else %> <%= button_to "Logout" ,  destroy_user_session_path , method: :delete , class: "ui primary button"  %> <% end %>
+       
+    </div>
+  </div>
+</div>
