@@ -1010,3 +1010,425 @@ Processing by ChatroomController#index as */*
 Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms | Allocations: 10453)
 
 
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:43:51 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 1425)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 8435)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.2ms | Allocations: 8719)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:45:53 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 111)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 10.4ms | Allocations: 1876)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 9585)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.5ms | Allocations: 10489)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:46:07 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 1876)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 9562)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.2ms | Allocations: 10484)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:46:08 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 1423)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 8409)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.1ms | Allocations: 8692)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:46:17 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 1874)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 9549)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms | Allocations: 10452)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:47:56 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 106)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 6.2ms | Allocations: 1874)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 9546)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.3ms | Allocations: 10468)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:48:09 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 6.0ms | Allocations: 9638)
+  Rendered layout layouts/application.html.erb (Duration: 213.0ms | Allocations: 100252)
+Completed 200 OK in 219ms (Views: 214.3ms | ActiveRecord: 0.4ms | Allocations: 103448)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:48:25 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 1905)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 9588)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.1ms | Allocations: 10551)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:49:22 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 1903)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 9582)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.1ms | Allocations: 10511)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:50:52 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 8.9ms | Allocations: 1904)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 9571)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.4ms | Allocations: 10501)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:39 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 1890)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 9573)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.1ms | Allocations: 10495)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:40 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 1423)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8415)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms | Allocations: 8699)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:40 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 2.8ms | Allocations: 1426)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 8424)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.1ms | Allocations: 8689)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:41 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 1423)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 8431)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms | Allocations: 8695)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:41 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 1423)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8442)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 8706)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:41 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 1438)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8463)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.1ms | Allocations: 8733)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:41 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 1424)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 8424)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.1ms | Allocations: 8688)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:51:42 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 1423)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 8406)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 8670)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:53:12 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 281)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 5.8ms | Allocations: 9651)
+  Rendered layout layouts/application.html.erb (Duration: 82.4ms | Allocations: 75977)
+Completed 200 OK in 88ms (Views: 83.5ms | ActiveRecord: 0.4ms | Allocations: 79174)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:54:39 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 2118)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9802)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.2ms | Allocations: 10765)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:55:13 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layouts/_navbar.html.erb (Duration: 4.5ms | Allocations: 2111)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9779)
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.2ms | Allocations: 10708)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:56:29 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.5ms | Allocations: 95)
+  Rendered layouts/_navbar.html.erb (Duration: 4.1ms | Allocations: 2099)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 9777)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.1ms | Allocations: 10699)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:56:34 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 1499)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 8506)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms | Allocations: 8796)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:56:53 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 281)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.3ms | Allocations: 125)
+  Rendered layouts/_navbar.html.erb (Duration: 6.0ms | Allocations: 9927)
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | Allocations: 76215)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 0.4ms | Allocations: 79410)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:57:09 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.4ms | Allocations: 95)
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 2113)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 9778)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms | Allocations: 10741)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:57:28 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layouts/_navbar.html.erb (Duration: 3.8ms | Allocations: 2111)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 9779)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 10708)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:57:40 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 2111)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 9770)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.1ms | Allocations: 10700)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:57:47 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.2ms | Allocations: 95)
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 2112)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 9769)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms | Allocations: 10691)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:58:28 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_jquery.html.erb (Duration: 0.4ms | Allocations: 95)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 2098)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 9767)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.1ms | Allocations: 10689)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 16:59:47 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 109)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 1894)
+  Rendered layout layouts/application.html.erb (Duration: 1144.1ms | Allocations: 97467)
+Completed 200 OK in 1165ms (Views: 1163.3ms | ActiveRecord: 0.1ms | Allocations: 98390)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:00:07 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1435)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 8613)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 8903)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:00:15 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 1891)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 9564)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.1ms | Allocations: 10468)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:00:33 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 1890)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 9572)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 10494)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-25 17:01:31 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 106)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layouts/_navbar.html.erb (Duration: 3.9ms | Allocations: 2108)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 9850)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms | Allocations: 10773)
+
+
