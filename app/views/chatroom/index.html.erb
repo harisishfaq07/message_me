@@ -1,1 +1,32 @@
-chatroom index
+<div class= "ui container">
+<div class="ui success message shut_div">
+<%= flash[:success] = "Welcome #{current_user.email}" %>
+<i class="window close icon shut_icon"></i>
+</div>
+</div>
+<h2 class="ui center aligned big icon header">
+<%= image_tag "logo.png"%><br>
+ Message Me
+</h2>
+<br><br><br>
+<div class= "ui container">
+<div class="ui two column grid">
+<div class="twelve wide column">
+   <%= render :partial => "chatbot" %>
+</div>
+ 
+
+<div class="four wide column">
+<%= render :partial => "online" %>
+</div>
+</div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".shut_icon").click(function(){
+       $(".shut_div").hide();
+    })
+    
+})
+</script>

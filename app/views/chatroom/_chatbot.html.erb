@@ -1,0 +1,31 @@
+<div class="ui fluid raised card chatbox">
+  <div class="content">
+    <div class="header">Message Time</div>
+    <hr>
+ 
+<div class="ui small feed">
+<% @messages.each do |m| %>  
+<div class="event">
+    <div class="content">
+      <div class="summary">
+         <em><%= m.user.email %></em>: <%= m.body %> 
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+</div>
+</div>
+        <div class="extra content">
+        <div class = "ui reply form" >
+                <%= form_for Message.new do |m| %>
+                <div class="field input">
+                <%= m.text_field :body , placeholder: "Write your message..." %>
+                </div>
+                <div class="ui blue labeled submit icon button">
+                 <i class="edit icon"> </i>  <%= m.submit %>
+                </div>
+                <% end %>
+                </div>
+        </div>
+</div>
