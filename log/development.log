@@ -9466,3 +9466,3116 @@ Subscription class not found: "CommentChannel"
 Subscription class not found: "CommentChannel"
 Subscription class not found: "CommentChannel"
 Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Subscription class not found: "CommentChannel"
+Finished "/cable" [WebSocket] for ::1 at 2022-12-26 14:52:46 +0500
+Subscription class not found: "CommentChannel"
+Finished "/cable" [WebSocket] for ::1 at 2022-12-26 14:52:46 +0500
+Finished "/cable" [WebSocket] for ::1 at 2022-12-26 14:52:47 +0500
+RoomChannel stopped streaming from room_channel
+Subscription class not found: "CommentChannel"
+Finished "/cable" [WebSocket] for ::1 at 2022-12-26 14:52:48 +0500
+Started GET "/" for ::1 at 2022-12-26 14:52:53 +0500
+Processing by WelcomeController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/root.html.erb within layouts/application
+  Rendered welcome/root.html.erb within layouts/application (Duration: 2.4ms | Allocations: 593)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:5
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 1396)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 9196)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.3ms | Allocations: 9469)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-12-26 14:53:04 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms | Allocations: 1952)
+
+
+Started GET "/" for ::1 at 2022-12-26 14:53:04 +0500
+Processing by WelcomeController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/root.html.erb within layouts/application
+  Rendered welcome/root.html.erb within layouts/application (Duration: 1.2ms | Allocations: 593)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 761)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 8545)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 8816)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-12-26 14:53:06 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 534)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1238)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 711)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 9298)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 9766)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-12-26 14:53:15 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@example.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/chatroom.3
+Completed 302 Found in 278ms (ActiveRecord: 0.7ms | Allocations: 2547)
+
+
+Started GET "/chatroom.3" for ::1 at 2022-12-26 14:53:15 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 3.7ms | Allocations: 5152)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 6956)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 14424)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 14709)
+
+
+Started POST "/messages" for ::1 at 2022-12-26 14:54:08 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"Allah ibadat made things beautiful, including us"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (1.2ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "Allah ibadat made things beautiful, including us"], ["user_id", 3], ["created_at", "2022-12-26 09:54:08.875643"], ["updated_at", "2022-12-26 09:54:08.875643"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 14ms (ActiveRecord: 2.6ms | Allocations: 3969)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 14:54:08 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 7.4ms | Allocations: 5817)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 7654)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 15121)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.4ms | Allocations: 15405)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-12-26 14:56:03 +0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 1954)
+
+
+Started GET "/" for ::1 at 2022-12-26 14:56:03 +0500
+Processing by WelcomeController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/root.html.erb within layouts/application
+  Rendered welcome/root.html.erb within layouts/application (Duration: 1.1ms | Allocations: 597)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 761)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 8718)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 8990)
+
+
+Started GET "/cable" for ::1 at 2022-12-26 17:25:07 +0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable" [WebSocket] for ::1 at 2022-12-26 17:25:07 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started GET "/" for ::1 at 2022-12-26 17:25:11 +0500
+Processing by WelcomeController#root as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcome/root.html.erb within layouts/application
+Subscription class not found: "NotificationChannel"
+  Rendered welcome/root.html.erb within layouts/application (Duration: 1284.1ms | Allocations: 147648)
+  Rendered layouts/_javascript.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 1462)
+  Rendered layout layouts/application.html.erb (Duration: 1307.4ms | Allocations: 178531)
+Completed 200 OK in 1312ms (Views: 1308.7ms | ActiveRecord: 0.0ms | Allocations: 181637)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started GET "/cable" for ::1 at 2022-12-26 17:25:15 +0500
+Started GET "/cable" [WebSocket] for ::1 at 2022-12-26 17:25:15 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/users/sign_in" for ::1 at 2022-12-26 17:25:16 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 909)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 669)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3728)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 759)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 11882)
+Completed 200 OK in 28ms (Views: 19.2ms | ActiveRecord: 0.5ms | Allocations: 18248)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/users/sign_in" for ::1 at 2022-12-26 17:25:27 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"haris1@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "haris1@example.com"], ["LIMIT", 1]]
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Redirected to http://localhost:3000/chatroom.2
+Completed 302 Found in 285ms (ActiveRecord: 0.6ms | Allocations: 7087)
+
+
+Started GET "/chatroom.2" for ::1 at 2022-12-26 17:25:27 +0500
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 9.6ms | Allocations: 11609)
+  Rendered chatroom/_online.html.erb (Duration: 0.5ms | Allocations: 120)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 14401)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 655)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 22079)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.6ms | Allocations: 23903)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:25:36 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"i am very grate ful"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "i am very grate ful"], ["user_id", 2], ["created_at", "2022-12-26 12:25:36.307754"], ["updated_at", "2022-12-26 12:25:36.307754"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 19ms (ActiveRecord: 1.6ms | Allocations: 5394)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:25:36 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 4.6ms | Allocations: 6553)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 27.9ms | Allocations: 8573)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 618)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 16200)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.4ms | Allocations: 16526)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:25:45 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"d"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "d"], ["user_id", 2], ["created_at", "2022-12-26 12:25:45.295940"], ["updated_at", "2022-12-26 12:25:45.295940"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 12ms (ActiveRecord: 2.2ms | Allocations: 4024)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:25:45 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 6.3ms | Allocations: 7152)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 9044)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 16642)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.3ms | Allocations: 16928)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:25:47 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"d"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "d"], ["user_id", 2], ["created_at", "2022-12-26 12:25:47.802457"], ["updated_at", "2022-12-26 12:25:47.802457"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 13ms (ActiveRecord: 1.9ms | Allocations: 4016)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:25:47 +0500
+Subscription class not found: "NotificationChannel"
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 7.6ms | Allocations: 7820)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 9698)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 17165)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.3ms | Allocations: 17449)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:25:49 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"d"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "d"], ["user_id", 2], ["created_at", "2022-12-26 12:25:49.254732"], ["updated_at", "2022-12-26 12:25:49.254732"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 13ms (ActiveRecord: 2.0ms | Allocations: 4027)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:25:49 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 10.1ms | Allocations: 8487)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 10368)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 17835)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.6ms | Allocations: 18118)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:25:50 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"d"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "d"], ["user_id", 2], ["created_at", "2022-12-26 12:25:50.918432"], ["updated_at", "2022-12-26 12:25:50.918432"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 12ms (ActiveRecord: 2.2ms | Allocations: 4027)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:25:50 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 10.0ms | Allocations: 9155)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 11045)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 18512)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.4ms | Allocations: 18795)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:25:54 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"d"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "d"], ["user_id", 2], ["created_at", "2022-12-26 12:25:54.356704"], ["updated_at", "2022-12-26 12:25:54.356704"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms | Allocations: 4025)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:25:54 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 10.8ms | Allocations: 9824)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 11714)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 19317)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.4ms | Allocations: 19604)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started GET "/chatroom" for ::1 at 2022-12-26 17:26:34 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 14.5ms | Allocations: 10355)
+  Rendered chatroom/_online.html.erb (Duration: 0.9ms | Allocations: 97)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 23.6ms | Allocations: 13022)
+  Rendered layouts/_javascript.html.erb (Duration: 0.3ms | Allocations: 90)
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 1069)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 21443)
+Completed 200 OK in 41ms (Views: 38.2ms | ActiveRecord: 0.7ms | Allocations: 22311)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:26:36 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"d"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "d"], ["user_id", 2], ["created_at", "2022-12-26 12:26:36.859578"], ["updated_at", "2022-12-26 12:26:36.859578"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms | Allocations: 4097)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:26:36 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 8.7ms | Allocations: 10491)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 12369)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 19836)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.3ms | Allocations: 20135)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started GET "/chatroom" for ::1 at 2022-12-26 17:27:31 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 13.9ms | Allocations: 11023)
+  Rendered chatroom/_online.html.erb (Duration: 0.5ms | Allocations: 97)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 13683)
+  Rendered layouts/_javascript.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 1072)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 22111)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.6ms | Allocations: 22960)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:27:35 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"hahaha"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "hahaha"], ["user_id", 2], ["created_at", "2022-12-26 12:27:35.884025"], ["updated_at", "2022-12-26 12:27:35.884025"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 13ms (ActiveRecord: 2.8ms | Allocations: 4097)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:27:35 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 12.0ms | Allocations: 11159)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 13019)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 20614)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.4ms | Allocations: 20913)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started GET "/chatroom" for ::1 at 2022-12-26 17:27:42 +0500
+Subscription class not found: "NotificationChannel"
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 19.1ms | Allocations: 11159)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 26.0ms | Allocations: 13034)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 20637)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.8ms | Allocations: 20921)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:27:48 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"are you realy sure"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "are you realy sure"], ["user_id", 2], ["created_at", "2022-12-26 12:27:48.409737"], ["updated_at", "2022-12-26 12:27:48.409737"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 12ms (ActiveRecord: 1.9ms | Allocations: 4021)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:27:48 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 13.2ms | Allocations: 11827)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 13705)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 21172)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.7ms | Allocations: 21455)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:27:56 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"hahahaah"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "hahahaah"], ["user_id", 2], ["created_at", "2022-12-26 12:27:56.303916"], ["updated_at", "2022-12-26 12:27:56.303916"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 12ms (ActiveRecord: 1.6ms | Allocations: 3994)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:27:56 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 13.2ms | Allocations: 12495)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 14388)
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 21989)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.5ms | Allocations: 22273)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started POST "/messages" for ::1 at 2022-12-26 17:28:03 +0500
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"body"=>"o yes"}, "commit"=>"Create Message"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "o yes"], ["user_id", 2], ["created_at", "2022-12-26 12:28:03.791170"], ["updated_at", "2022-12-26 12:28:03.791170"]]
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:7:in `create'
+Redirected to http://localhost:3000/chatroom
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms | Allocations: 4021)
+
+
+Started GET "/chatroom" for ::1 at 2022-12-26 17:28:03 +0500
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:3
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/_chatbot.html.erb:7
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/chatroom/_chatbot.html.erb:10
+  Rendered chatroom/_chatbot.html.erb (Duration: 16.9ms | Allocations: 13325)
+  Rendered chatroom/_online.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 19.8ms | Allocations: 15186)
+Subscription class not found: "NotificationChannel"
+  Rendered layouts/_javascript.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 23147)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.5ms | Allocations: 23430)
+
+
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Finished "/cable" [WebSocket] for ::1 at 2022-12-26 17:52:32 +0500
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Started GET "/cable" for ::1 at 2022-12-26 18:17:51 +0500
+Started GET "/cable" [WebSocket] for ::1 at 2022-12-26 18:17:51 +0500
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"
+Subscription class not found: "NotificationChannel"

@@ -1,11 +1,11 @@
 <div class="ui fluid raised card chatbox">
-  <div class="content">
+  <div class="content" , id = "messages">
     <div class="header">Message Time</div>
     <hr>
  
 <div class="ui small feed">
 <% @messages.each do |m| %>  
-<div class="event">
+<div class="event" >
     <div class="content">
     <% if m.user.email == current_user.email %>
     <div class="summary text_right ">
