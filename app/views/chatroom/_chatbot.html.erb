@@ -7,9 +7,17 @@
 <% @messages.each do |m| %>  
 <div class="event">
     <div class="content">
+    <% if m.user.email == current_user.email %>
+    <div class="summary text_right ">
+    <small >[<%= m.created_at.strftime("%H:%M") %>]</small>  - <%= m.body %>
+     
+    </div>
+    <% else %>
       <div class="summary">
-         <em><%= m.user.email %></em>: <%= m.body %> 
+         <em><%= m.user.email %></em>: <%= m.body %> -
+         <small >[<%= m.created_at.strftime("%H:%M") %>]</small>
       </div>
+      <% end %>
     </div>
   </div>
   <% end %>
